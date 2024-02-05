@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Submission Form</title>
+</head>
+<body>
+    <h1>Email Submission Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
